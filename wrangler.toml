@@ -1,4 +1,13 @@
 name = "bedrinth"
 compatibility_date = "2024-09-23"
-compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = ".vercel/output/static"
+compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
+main = ".open-next/worker.js"
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+[images]
+binding = "IMAGES"
+[[services]]
+binding = "WORKER_SELF_REFERENCE"
+service = "bedrinth"

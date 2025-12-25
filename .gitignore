@@ -135,3 +135,6 @@ dist
 
 
 .vscode/
+
+.open-next
+.wrangler/
